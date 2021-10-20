@@ -3,10 +3,47 @@
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    max-width: 70%;
+    background: lightgrey;
 }
 
+main {
+    background: grey;
+}
+
+.nav-item, .navbar-brand {
+    margin: 5px 15px;
+}
+
+/* || Hero Section */
+.hero-section {
+    display: flex;
+    background-image: url('../img/3-pig-project-3.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 50%;
+    background: pink;
+    cursor: pointer;
+}
+
+/* || Our Story Section */
+/* 
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -60,6 +97,20 @@ body {
     border-radius: 10px;
 }
 
+.dropdown-links {
+    display: none;
+    z-index: 1;
+    max-width: 150px;
+}
+
+.dropdown-links li {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
 @media (max-width: 725px) {
     .toggle-button {
         display: flex;
@@ -91,4 +142,4 @@ body {
     .navbar-links.active {
         display: flex;
     }
-}
+} */
