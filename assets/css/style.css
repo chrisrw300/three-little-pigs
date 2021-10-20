@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    background: grey;
+    background: pink;
 }
 
 .nav-item, .navbar-brand {
@@ -50,11 +50,11 @@ main {
 /* || Our Story Section */
 .column {
     float: left;
-    height: 450px;
+    height: 500px;
     width: 45%;
     margin: 20px auto;
     padding: 10px;
-    background: pink;
+    background: white;
 }
 
 .our-story-img {
@@ -65,108 +65,33 @@ main {
 .row {
 }
 
+/* || Contact Us*/
+.column h4 {
+    text-align: center;
+}
+
+form {
+    padding: 5px;
+}
+
+form button {
+    display: block;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
 /* || Footer */
 footer {
     margin: 0;
     padding: 0;
 }
-/* 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: darkgrey;
-    color: white;
+
+@media screen and (min-width: 375px) {
+
 }
-
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
-}
-
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    display: block;
-    transition: 0.3s;
-}
-
-.navbar-links li a:hover {
-    color: red;
-}
-
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 31px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.dropdown-links {
-    display: none;
-    z-index: 1;
-    max-width: 150px;
-}
-
-.dropdown-links li {
-    display: block;
-}
-
-.show {
-    display: block;
-}
-
-@media (max-width: 725px) {
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar-links ul {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .navbar-links li {
-        text-align: center;
-    }
-
-    .navbar-links li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-} */
