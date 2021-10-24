@@ -1,0 +1,23 @@
+/* || Media Query @ 1024px*/
+
+@media screen and (max-width: 1024px) {
+/* || Hero Section */
+.hero-section {
+    height: 400px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 50%;
+    background: pink;
+    cursor: pointer;
+}
+
+
+}

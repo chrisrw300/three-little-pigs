@@ -1,3 +1,8 @@
+/* || Root */
+:root {
+    --pink: #FDD7E4;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,11 +11,25 @@ body {
     margin: 0 auto;
     padding: 0;
     max-width: 75%;
-    background: lightgrey;
+    background: url('../img/background.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: repeat;
+    box-shadow: 0 5px 15px black;
 }
 
 main {
-    background: pink;
+    background: var(--pink) ;
+}
+
+
+/* || Navbar */
+.navbar {
+    background: var(--pink) !important;
+}
+
+.navbar a {
+    color: black;
 }
 
 .nav-item, .navbar-brand {
@@ -25,7 +44,7 @@ main {
 /* || Hero Section */
 .hero-section {
     display: flex;
-    background-image: url('../img/3-pig-project-3.jpg');
+    background-image: url('../img/cover-img.jpeg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -33,8 +52,13 @@ main {
     height: 500px;
     width: 100%;
     text-align: center;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    z-index: 0;
+}
+
+.hero-item {
+    width: 50%;
 }
 
 .hero-btn {
@@ -62,9 +86,6 @@ main {
     background-size: cover;
 }
 
-.row {
-}
-
 /* || Contact Us*/
 .column h4 {
     text-align: center;
@@ -88,10 +109,10 @@ textarea {
 
 /* || Footer */
 footer {
+    text-align: center;
     margin: 0;
     padding: 0;
-}
-
-@media screen and (min-width: 375px) {
-
+    background: black;
+    color: white;
+    height: 100%;
 }
