@@ -59,6 +59,10 @@ main {
 
 .hero-item {
     width: 50%;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.75);
 }
 
 .hero-btn {
