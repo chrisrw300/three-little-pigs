@@ -1,0 +1,122 @@
+/* || Root */
+:root {
+    --pink: #FDD7E4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 75%;
+    background: url('../img/background.png');
+    background-size: 50%;
+    background-position: center;
+    background-repeat: repeat;
+    box-shadow: 0 5px 15px black;
+}
+
+main {
+    background: var(--pink) ;
+}
+
+
+/* || Navbar */
+.navbar {
+    background: var(--pink) !important;
+}
+
+.navbar a {
+    color: black;
+}
+
+.nav-item, .navbar-brand {
+    margin: 5px 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* || Hero Section */
+.hero-section {
+    display: flex;
+    background-image: url('../img/cover-img.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    justify-content: end;
+    align-items: center;
+    z-index: 0;
+}
+
+.hero-item {
+    width: 50%;
+    margin: 0 20px;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgb(255, 255, 255, 0.75);
+}
+
+.hero-btn {
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 50%;
+    background: pink;
+    cursor: pointer;
+}
+
+/* || Our Story Section */
+.column {
+    float: left;
+    height: 500px;
+    width: 45%;
+    margin: 20px auto;
+    padding: 10px;
+    background: white;
+}
+
+.our-story-img {
+    background-image: url('../img/3-pig-project.jpg');
+    background-size: cover;
+}
+
+/* || Contact Us*/
+.column h4 {
+    text-align: center;
+}
+
+form {
+    padding: 5px;
+}
+
+form button {
+    display: block;
+}
+
+form label, form input, form textarea, form button {
+    width: 100%;
+}
+
+textarea {
+    resize: none;
+}
+
+/* || Footer */
+footer {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    height: 100%;
+}
