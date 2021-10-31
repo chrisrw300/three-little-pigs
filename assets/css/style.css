@@ -25,7 +25,7 @@ main {
 
 /* || Navbar */
 .navbar {
-    background: var(--pink) !important;
+    background: var(--pink);
 }
 
 .navbar a {
