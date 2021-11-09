@@ -32,6 +32,10 @@ main {
     color: black;
 }
 
+.navbar-brand {
+    font-size: 2vw;
+}
+
 .nav-item, .navbar-brand {
     margin: 5px 15px;
 }
@@ -72,7 +76,7 @@ main {
     border-radius: 10px;
     height: 35px;
     width: 50%;
-    background: pink;
+    background: var(--pink);
     cursor: pointer;
 }
 
@@ -115,6 +119,14 @@ textarea {
 /* || Products Page */
 .product-title {
     text-align: center;
+    padding: 5px 0;
+}
+
+.product-title-alt {
+    background: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .card-wrapper {
@@ -122,6 +134,16 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 15px 0;
+}
+
+.card-wrapper-alt {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
 }
 
 .cards {
@@ -132,6 +154,10 @@ textarea {
     margin: 15px;
     display: block;
     background: white;
+}
+
+.cards-alt {
+    background: var(--pink) !important;
 }
 
 .cards-body {
@@ -152,7 +178,7 @@ textarea {
 }
 
 .card-info {
-
+    padding: 0 5px;
 }
 
 .card-price {
