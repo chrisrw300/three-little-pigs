@@ -1,6 +1,7 @@
 /* || Root */
 :root {
     --pink: #ED7F8D;
+    --white: white;
 }
 
 * {
@@ -184,6 +185,61 @@ textarea {
 .card-price {
     text-align: right;
     margin-bottom: 0;
+}
+
+/* || About Us */
+.about-hero {
+    background: var(--white);
+    text-align: center;
+}
+
+.about-hero img {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+}
+
+.about-hero p {
+    font-size: 20px;
+}
+
+.about-pictures {
+    display: flex;
+}
+
+.about-pictures img {
+    width: 25%;
+    margin: 20px auto;
+}
+
+.about-info p {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.about-values {
+    background: var(--white);
+}
+
+.about-values img {
+    margin: 0;
+    padding: 25px;
+    width: 55%;
+    height: 100%;
+}
+
+.about-belief {
+    display: flex;
+}
+
+.about-belief img {
+    width: 200px;
+    height: 200px;
+    border-radius: 75%;
 }
 
 /* || Footer */
