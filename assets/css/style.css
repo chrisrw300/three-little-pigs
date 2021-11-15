@@ -23,6 +23,10 @@ main {
     background: var(--pink) ;
 }
 
+.border-radius {
+    border-radius: 10px;
+}
+
 
 /* || Navbar */
 .navbar {
@@ -49,7 +53,6 @@ main {
 /* || Hero Section */
 .hero-section {
     display: flex;
-    /* border: thick solid var(--pink); */
     background-image: url('../img/cover-img.jpeg');
     background-position: center;
     background-size: cover;
@@ -65,10 +68,10 @@ main {
 
 .hero-item {
     width: 50%;
-    margin: 0 20px;
+    margin: 100px auto 0 auto;
     padding: 15px;
-    border-radius: 15px;
-    background: rgb(255, 255, 255, 0.75);
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
 }
 
 .hero-btn {
@@ -94,6 +97,7 @@ main {
 .our-story-img {
     background-image: url('../img/3-pig-project.jpg');
     background-size: cover;
+    border-radius: 10px;
 }
 
 /* || Contact Us*/
@@ -191,6 +195,7 @@ textarea {
 .about-hero {
     background: var(--white);
     text-align: center;
+    padding: 25px 0 30px 0;
 }
 
 .about-hero img {
@@ -214,6 +219,10 @@ textarea {
     margin: 20px auto;
 }
 
+.about-info {
+    padding: 25px 0;
+}
+
 .about-info p {
     width: 75%;
     margin: 0 auto;
@@ -223,23 +232,26 @@ textarea {
 
 .about-values {
     background: var(--white);
+    padding: 0;
 }
 
-.about-values img {
-    margin: 0;
-    padding: 25px;
-    width: 55%;
-    height: 100%;
+.about-values-p {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .about-belief {
     display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
 }
 
-.about-belief img {
-    width: 200px;
-    height: 200px;
-    border-radius: 75%;
+.about-belief i {
+    color: var(--pink);
+    font-size: 10em;
 }
 
 /* || Footer */
