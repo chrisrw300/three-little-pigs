@@ -1,7 +1,7 @@
 /* || Root */
 :root {
     --pink: #ED7F8D;
-    --white: white;
+    --white: #FFF5EE;
 }
 
 * {
@@ -71,7 +71,7 @@ main {
     margin: 100px auto 0 auto;
     padding: 15px;
     border-radius: 10px;
-    background: rgb(255, 255, 255);
+    background: var(--white);
 }
 
 .hero-btn {
@@ -91,7 +91,7 @@ main {
     width: 45%;
     margin: 20px auto;
     padding: 10px;
-    background: white;
+    background:  var(--white);
 }
 
 .our-story-img {
@@ -128,7 +128,7 @@ textarea {
 }
 
 .product-title-alt {
-    background: white;
+    background:  var(--white);
     text-align: center;
     margin: 0;
     padding: 10px 0;
@@ -143,7 +143,7 @@ textarea {
 }
 
 .card-wrapper-alt {
-    background: white;
+    background:  var(--white);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@ textarea {
     height: 100%;
     margin: 15px;
     display: block;
-    background: white;
+    background:  var(--white);
 }
 
 .cards-alt {
@@ -201,8 +201,8 @@ textarea {
 .about-hero img {
     width: 75%;
     height: auto;
-    margin: 0 auto;
-    padding: 15px;
+    margin: 10px auto;
+    padding: 0;
     display: block;
 }
 
@@ -260,7 +260,7 @@ footer {
     margin: 0;
     padding: 0;
     background: black;
-    color: white;
+    color:  var(--white);
     height: 100%;
 }
 
