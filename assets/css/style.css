@@ -2,6 +2,8 @@
 :root {
     --pink: #ED7F8D;
     --white: #FFF5EE;
+    --pt-serif: 'PT Serif', serif;
+    --balsamiq: 'Balsamiq Sans', cursive;
 }
 
 * {
@@ -30,11 +32,17 @@ main {
 
 /* || Navbar */
 .navbar {
+    font-family: var(--balsamiq);
     background: var(--pink);
 }
 
 .navbar a {
     color: black;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 .navbar-brand {
@@ -67,6 +75,7 @@ main {
 }
 
 .hero-item {
+    font-family: var(--balsamiq);
     width: 50%;
     margin: 100px auto 0 auto;
     padding: 15px;
@@ -74,14 +83,26 @@ main {
     background: var(--white);
 }
 
+.hero-item p {font-family: var(--pt-serif);}
+
 .hero-btn {
     outline: none;
     border: none;
     border-radius: 10px;
-    height: 35px;
+    height: 40px;
     width: 50%;
     background: var(--pink);
     cursor: pointer;
+}
+
+.hero-btn a {
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.hero-btn a:hover {
+    color: var(--white);
 }
 
 /* || Our Story Section */
@@ -115,6 +136,18 @@ form button {
 
 form label, form input, form textarea, form button {
     width: 100%;
+    border-radius: 5px;
+}
+
+form input, textarea {
+    border: thin solid black;
+    background: white;
+}
+
+form button {
+    border: thin solid black;
+    background-color: var(--pink);
+    padding: 5px 0;
 }
 
 textarea {
@@ -124,14 +157,14 @@ textarea {
 /* || Products Page */
 .product-title {
     text-align: center;
-    padding: 5px 0;
+    padding: 20px 0 0 0;
 }
 
 .product-title-alt {
     background:  var(--white);
     text-align: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0 0 0;
 }
 
 .card-wrapper {
@@ -171,7 +204,7 @@ textarea {
 }
 
 .cards-body img {
-    min-height: 30vh;
+    height: 20vh;
     margin: 0;
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -257,11 +290,11 @@ textarea {
 /* || Footer */
 footer {
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background: black;
+    margin: 0 auto;
+    height: 5vh;
+    width: 100%;
+    background: var(--pink);
     color:  var(--white);
-    height: 100%;
 }
 
 
