@@ -237,6 +237,7 @@ textarea {
     margin: 10px auto;
     padding: 0;
     display: block;
+    box-shadow: 0 5px 10px black;
 }
 
 .about-hero p {
@@ -250,6 +251,7 @@ textarea {
 .about-pictures img {
     width: 25%;
     margin: 20px auto;
+    box-shadow: 0 5px 10px black;
 }
 
 .about-info {
