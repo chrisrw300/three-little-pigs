@@ -1,9 +1,13 @@
 /* || Root */
 :root {
-    --pink: #ED7F8D;
-    --white: #FFF5EE;
+    --pink: #ed7f8d;
+    --white: white;
+    --black: #0C131D;
+    /* --white: #FFF5EE; */
     --pt-serif: 'PT Serif', serif;
     --balsamiq: 'Balsamiq Sans', cursive;
+    --schoolbell: 'Schoolbell', cursive;
+    --baloo: 'Baloo 2', cursive;
 }
 
 * {
@@ -18,11 +22,12 @@ body {
     background-size: 50%;
     background-position: center;
     background-repeat: repeat;
-    box-shadow: 0 5px 15px black;
+    box-shadow: 0 5px 15px var(--black);
+    font-family: var(--baloo);
 }
 
 main {
-    background: var(--pink) ;
+    background: var(--black);
 }
 
 .border-radius {
@@ -33,11 +38,11 @@ main {
 /* || Navbar */
 .navbar {
     font-family: var(--balsamiq);
-    background: var(--pink);
+    background: var(--black);
 }
 
 .navbar a {
-    color: black;
+    color: var(--pink);
     transition: 0.3s;
 }
 
@@ -47,6 +52,11 @@ main {
 
 .navbar-brand {
     font-size: 2vw;
+    font-family: var(--schoolbell);
+}
+
+.navbar-brand button {
+    margin: 0 auto;
 }
 
 .nav-item, .navbar-brand {
@@ -56,6 +66,8 @@ main {
 .section-title {
     text-align: center;
     margin: 20px auto;
+    font-family: var(--schoolbell);
+    color: var(--pink);
 }
 
 /* || Hero Section */
@@ -74,35 +86,64 @@ main {
     z-index: 0;
 }
 
+.hero-title {
+    font-family: var(--schoolbell);
+    color: var(--pink)
+}
+/* 
 .hero-item {
     font-family: var(--balsamiq);
     width: 50%;
     margin: 100px auto 0 auto;
     padding: 15px;
+    line-height: 1.75em;
     border-radius: 10px;
-    background: var(--white);
+    background: var(--black);
+} */
+
+.hero-item {
+    font-family: var(--balsamiq);
+    width: 75%;
+    margin: 100px auto;
+    padding: 15px;
+    line-height: 1.75em;
+    border-radius: 10px;
+    background: var(--black);
+    text-align: center;
 }
 
-.hero-item p {font-family: var(--pt-serif);}
+.hero-item p {
+    font-family: var(--pt-serif);
+    color: var(--white);
+}
+
+.hero-item a {transition: 0.3s;}
+
+.hero-item a:hover {
+    text-decoration: none;
+    color: var(--white);
+}
 
 .hero-btn {
     outline: none;
     border: none;
-    border-radius: 10px;
-    height: 40px;
     width: 50%;
-    background: var(--pink);
+    background: var(--black);
+    color: var(--pink);
     cursor: pointer;
 }
 
 .hero-btn a {
-    color: black;
+    color: var(--pink);
+    border-radius: 10px;
     text-decoration: none;
     transition: 0.4s;
+    padding: 10px 5px;
 }
 
 .hero-btn a:hover {
-    color: var(--white);
+    color: var(--black);
+    background: var(--pink);
 }
 
 /* || Our Story Section */
@@ -112,13 +153,28 @@ main {
     width: 45%;
     margin: 20px auto;
     padding: 10px;
-    background:  var(--white);
+    background:  var(--black);
+    color: var(--white);
 }
 
 .our-story-img {
     background-image: url('../img/3-pig-project.jpg');
     background-size: cover;
     border-radius: 10px;
+}
+
+.our-story-column {
+    line-height: 1.75em;
+}
+
+/* || Parallax */
+.parallax {
+    min-height: 300px;
+    background-image: url("../img/parallax.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* || Contact Us*/
@@ -128,6 +184,7 @@ main {
 
 form {
     padding: 5px;
+    background: var(--black);
 }
 
 form button {
@@ -140,12 +197,12 @@ form label, form input, form textarea, form button {
 }
 
 form input, textarea {
-    border: thin solid black;
+    border: thin solid var(--black);
     background: white;
 }
 
 form button {
-    border: thin solid black;
+    border: thin solid var(--black);
     background-color: var(--pink);
     padding: 5px 0;
 }
@@ -158,10 +215,12 @@ textarea {
 .product-title {
     text-align: center;
     padding: 20px 0 0 0;
+    font-family: var(--schoolbell);
 }
 
 .product-title-alt {
     background:  var(--white);
+    font-family: var(--schoolbell);
     text-align: center;
     margin: 0;
     padding: 20px 0 0 0;
@@ -173,6 +232,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px 0;
+    line-height: 1.75em;
 }
 
 .card-wrapper-alt {
@@ -182,6 +242,7 @@ textarea {
     flex-wrap: wrap;
     justify-content: center;
     padding: 15px 0;
+    line-height: 1.75em;
 }
 
 .cards {
@@ -237,7 +298,7 @@ textarea {
     margin: 10px auto;
     padding: 0;
     display: block;
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0 5px 10px var(--black);
 }
 
 .about-hero p {
@@ -251,7 +312,7 @@ textarea {
 .about-pictures img {
     width: 25%;
     margin: 20px auto;
-    box-shadow: 0 5px 10px black;
+    box-shadow: 0 5px 10px var(--black);
 }
 
 .about-info {
@@ -263,6 +324,7 @@ textarea {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
+    line-height: 1.75em;
 }
 
 .about-values {
@@ -275,6 +337,7 @@ textarea {
     margin: 0 auto;
     padding: 10px 0;
     text-align: center;
+    line-height: 1.75em;
 }
 
 .about-belief {
@@ -295,8 +358,8 @@ footer {
     margin: 0 auto;
     height: 5vh;
     width: 100%;
-    background: var(--pink);
-    color:  var(--white);
+    background: var(--black);
+    color:  var(--pink);
 }
 
 
@@ -305,3 +368,22 @@ footer {
 
 
 */
+.meat-item {
+    background: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2em;
+    margin: 0 auto;
+    width: 75%;
+    border-bottom: thick dotted white;
+}
+
+.meat-item p {
+    margin-bottom: 0;
+}
+
+.meat-item img {
+    width: 40%;
+    float: right;
+}

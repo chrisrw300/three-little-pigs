@@ -24,4 +24,38 @@
     .navbar-brand {
         font-size: 20px;
     }
+
+    .navbar-collapse {
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+
+    .navbar-collapse a {
+    }
+
+    .nav-item {
+        border: thin solid white;
+        padding: 5px 15px;
+        border-radius: 10px;
+        width: 50%;
+    }
+
+    /* || Our Story Home Styles*/
+    .column {
+        height: 350px;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        background:  var(--white);
+        text-align: center;
+    }
+
+    .our-story-img {
+        background-image: url('../img/3-pig-project.jpg');
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
 }
