@@ -215,78 +215,17 @@ textarea {
     resize: none;
 }
 
-/* || Products Page */
-.product-title {
-    text-align: center;
-    padding: 20px 0 0 0;
-    font-family: var(--schoolbell);
+/* || Product Page */
+.menu-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px 20px;
 }
 
-.product-title-alt {
-    background:  var(--white);
-    font-family: var(--schoolbell);
-    text-align: center;
-    margin: 0;
-    padding: 20px 0 0 0;
-}
-
-.card-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px 0;
-    line-height: 1.75em;
-}
-
-.card-wrapper-alt {
-    background:  var(--white);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px 0;
-    line-height: 1.75em;
-}
-
-.cards {
-    border-radius: 10px;
-    flex: 20%;
-    max-width: 20%;
-    height: 100%;
-    margin: 15px;
-    display: block;
-    background:  var(--white);
-}
-
-.cards-alt {
-    background: var(--pink) !important;
-}
-
-.cards-body {
-    margin: 0;
-    padding: 5px;
-}
-
-.cards-body img {
-    height: 20vh;
-    margin: 0;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-title {
-    font-size: 20px;
-    text-align: center;
-}
-
-.card-info {
-    padding: 0 5px;
-}
-
-.card-price {
-    text-align: right;
-    margin-bottom: 0;
+.menu-container-item {
+    width: 300px;
+    height: 200px;
+    background: var(--white);
 }
 
 /* || About Us */
@@ -364,30 +303,4 @@ footer {
     width: 100%;
     background: var(--black);
     color:  var(--pink);
-}
-
-
-/* || Notes for future
-1. Make the entire page have a thicker pink border on left and right
-
-
-*/
-.meat-item {
-    background: white;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 2em;
-    margin: 0 auto;
-    width: 75%;
-    border-bottom: thick dotted white;
-}
-
-.meat-item p {
-    margin-bottom: 0;
-}
-
-.meat-item img {
-    width: 40%;
-    float: right;
 }
