@@ -182,6 +182,10 @@ main {
     text-align: center;
 }
 
+.home-contact p {
+    padding: 5px 0;
+}
+
 form {
     padding: 5px;
     background: var(--black);
