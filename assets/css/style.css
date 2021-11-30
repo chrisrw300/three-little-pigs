@@ -48,9 +48,6 @@ main {
     padding: 15px 0;
 }
 
-.border-radius {
-    border-radius: 10px;
-}
 
 
 /* || Navbar */
@@ -108,16 +105,6 @@ main {
     font-family: var(--schoolbell);
     color: var(--pink)
 }
-/* 
-.hero-item {
-    font-family: var(--balsamiq);
-    width: 50%;
-    margin: 100px auto 0 auto;
-    padding: 15px;
-    line-height: 1.75em;
-    border-radius: 10px;
-    background: var(--black);
-} */
 
 .hero-item {
     font-family: var(--balsamiq);
@@ -246,7 +233,9 @@ textarea {
     margin: 0 auto;
     padding: 25px;
     width: 90%;
+    border-radius: 10px;
     border: 15px double var(--pink);
+    color: var(--black);
 }
 
 .menu-title {
@@ -260,7 +249,7 @@ textarea {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px dotted var(--pink);
+    border-bottom: 3px dotted var(--black);
     margin: 0;
     padding: 5px 0;
 }
