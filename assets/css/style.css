@@ -3,7 +3,6 @@
     --pink: #ed7f8d;
     --white: white;
     --black: #0C131D;
-    /* --white: #FFF5EE; */
     --pt-serif: 'PT Serif', serif;
     --balsamiq: 'Balsamiq Sans', cursive;
     --schoolbell: 'Schoolbell', cursive;
@@ -194,7 +193,7 @@ main {
 .parallax-2 {
     min-height: 300px;
     background-image: url("../img/parallax-2.jpg");
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
