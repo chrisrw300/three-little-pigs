@@ -91,7 +91,68 @@
 
 /* || @ 425px */
 @media screen and (max-width: 425px) {
+    /* || Body Styles */
     body {
-        max-width: 95%;
+        max-width: 100%;
     }
+
+    main {  
+        padding: 0;
+    }
+
+    /* || Homepage */
+    .hero-item {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    /* || Contact */
+    iframe {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .iframe-p {
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    .section-subtitle {
+        margin: 10px 0 0 20px;
+        text-align: left !important;
+    }
+
+    /* || Menu */
+    .menu-container {
+        padding: 10px;
+        border-radius: 5px;
+        border: 10px double var(--pink);
+    }
+    
+    .menu-title {
+        font-size: 20px;
+    }
+    
+    .menu-item {
+        width: 100%;
+        border-bottom: 2px dotted var(--black);
+    }
+    
+    .item-name, .item-price {
+        font-size: 15px;
+    }
+
+    /* || About */
+    .about-info p, .about-values-p {
+        width: 90%;
+    }
+
+    .about-belief i {
+        font-size: 6em;
+        margin: 5px 0;
+    }
+
 }
