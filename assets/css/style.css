@@ -3,16 +3,12 @@
     --pink: #ed7f8d;
     --white: white;
     --black: #0C131D;
-    --pt-serif: 'PT Serif', serif;
     --balsamiq: 'Balsamiq Sans', cursive;
     --schoolbell: 'Schoolbell', cursive;
     --baloo: 'Baloo 2', cursive;
 }
-
-* {
-    box-sizing: border-box;
-}
-
+* {box-sizing: border-box;}
+/* || Body & Main */
 body {
     margin: 0 auto;
     padding: 0;
@@ -24,11 +20,8 @@ body {
     box-shadow: 0 5px 15px var(--black);
     font-family: var(--baloo);
 }
-
-main {
-    background: var(--black);
-}
-
+main {background: var(--black);}
+/* || Navbar */
 .header {
     font-size: 2rem;
     background: var(--white);
@@ -37,7 +30,6 @@ main {
     margin: 0;
     padding: 15px 0;
 }
-
 .header-alt {
     font-size: 2rem;
     background: var(--black);
@@ -46,8 +38,6 @@ main {
     margin: 0;
     padding: 15px 0;
 }
-
-/* || Navbar */
 .navbar {
     font-family: var(--balsamiq);
     background: var(--black);
@@ -57,24 +47,13 @@ main {
     color: var(--pink);
     transition: 0.3s;
 }
-
-.navbar a:hover {
-    color: white;
-}
-
+.navbar a:hover {color: white;}
 .navbar-brand {
     font-size: 2vw;
     font-family: var(--schoolbell);
 }
-
-.navbar-brand button {
-    margin: 0 auto;
-}
-
-.nav-item, .navbar-brand {
-    margin: 5px 15px;
-}
-
+.navbar-brand button {margin: 0 auto;}
+.nav-item, .navbar-brand {margin: 5px 15px;}
 .hamburger {
     width: 35px;
     height: 3px;
@@ -82,15 +61,13 @@ main {
     margin: 6px 0;
     border-radius: 1px;
 }
-
 .section-title {
     text-align: center;
     margin: 20px auto;
     font-family: var(--schoolbell);
     color: var(--pink);
 }
-
-/* || Hero Section */
+/* || Homepage - Hero Section */
 .hero-section {
     display: flex;
     background-image: url('../img/cover-img.jpeg');
@@ -105,12 +82,10 @@ main {
     align-items: center;
     z-index: 0;
 }
-
 .hero-title {
     font-family: var(--schoolbell);
     color: var(--pink)
 }
-
 .hero-item {
     font-family: var(--balsamiq);
     width: 75%;
@@ -121,20 +96,16 @@ main {
     background: var(--black);
     text-align: center;
 }
-
 .hero-item p {
     font-family: var(--pt-serif);
     color: var(--white);
     font-size: 16px;
 }
-
 .hero-item a {transition: 0.3s;}
-
 .hero-item a:hover {
     text-decoration: none;
     color: var(--white);
 }
-
 .hero-btn {
     outline: none;
     border: none;
@@ -143,7 +114,6 @@ main {
     color: var(--pink);
     cursor: pointer;
 }
-
 .hero-btn a {
     color: var(--pink);
     border-radius: 10px;
@@ -151,13 +121,11 @@ main {
     transition: 0.4s;
     padding: 10px 5px;
 }
-
 .hero-btn a:hover {
     color: var(--black);
     background: var(--pink);
 }
-
-/* || Our Story Section */
+/* || Homepage - Our Story Section */
 .column {
     float: left;
     height: 500px;
@@ -167,17 +135,12 @@ main {
     background:  var(--black);
     color: var(--white);
 }
-
 .our-story-img {
     background-image: url('../img/3-pig-project.jpg');
     background-size: cover;
     border-radius: 10px;
 }
-
-.our-story-column {
-    line-height: 1.75em;
-}
-
+.our-story-column {line-height: 1.75em;}
 /* || Parallax */
 .parallax {
     min-height: 300px;
@@ -187,7 +150,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .parallax-2 {
     min-height: 300px;
     background-image: url("../img/parallax-2.jpg");
@@ -196,52 +158,36 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* || Contact Us*/
-.column h4 {
-    text-align: center;
-}
-
-.home-contact p {
-    padding: 5px 0;
-}
-
+/* || Homepage - Contact Us*/
+.column h4 {text-align: center;}
+.home-contact p {padding: 5px 0;}
 iframe {
     width: 100%;
     height: 85%;
 }
-
 form {
     padding: 5px;
     background: var(--black);
 }
-
 form label, form input, form textarea, form button {
     width: 100%;
     border-radius: 5px;
 }
-
 form input, textarea {
     border: thin solid var(--black);
     background: white;
 }
-
 form button {
     border: thin solid var(--black);
     background: var(--pink);
     padding: 5px 0;
     transition: 0.3s;
 }
-
 form button:hover {
     background: var(--white);
     color: var(--black);
 }
-
-textarea {
-    resize: none;
-}
-
+textarea {resize: none;}
 /* || Product Page */
 .menu-container {
     background: var(--white);
@@ -252,24 +198,20 @@ textarea {
     border: 15px double var(--pink);
     color: var(--black);
 }
-
 .menu-container h5 {
     text-align: center;
     padding: 5px;
     line-height: 2px;
 }
-
 .menu-container h5 a {
     color: var(--pink);
     text-decoration: underline;
 }
-
 .menu-title {
     font-size: 30px;
     padding: 15px 0;
     text-align: center;
 }
-
 .menu-item {
     width: 100%;
     display: flex;
@@ -279,35 +221,20 @@ textarea {
     margin: 0;
     padding: 5px 0;
 }
-
-.item-name {
-    font-size: 20px;
-}
-
-.item-price {
-    font-size: 20px;
-}
-
-/* || About Us */
-.about-hero p {
-    font-size: 20px;
-}
-
-.about-pictures {
-    display: flex;
-}
-
+.item-name {font-size: 20px;}
+.item-price {font-size: 20px;}
+/* || About Us Page */
+.about-hero p {font-size: 20px;}
+.about-pictures {display: flex;}
 .about-pictures img {
     width: 25%;
     margin: 20px auto;
     box-shadow: 0 5px 10px var(--black);
 }
-
 .about-info {
     padding: 25px 0;
     background: var(--white);
 }
-
 .about-info p {
     width: 75%;
     margin: 0 auto;
@@ -315,13 +242,11 @@ textarea {
     text-align: center;
     line-height: 1.75em;
 }
-
 .about-values {
     background: var(--black);
     color: var(--white);
     padding: 0;
 }
-
 .about-values-p {
     width: 75%;
     margin: 0 auto;
@@ -329,19 +254,16 @@ textarea {
     text-align: center;
     line-height: 1.75em;
 }
-
 .about-belief {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
     margin: 0;
 }
-
 .about-belief i {
     color: var(--pink);
     font-size: 10em;
 }
-
 /* || Footer */
 footer {
     text-align: center;
