@@ -47,8 +47,6 @@ main {
     padding: 15px 0;
 }
 
-
-
 /* || Navbar */
 .navbar {
     font-family: var(--balsamiq);
@@ -253,6 +251,17 @@ textarea {
     border-radius: 10px;
     border: 15px double var(--pink);
     color: var(--black);
+}
+
+.menu-container h5 {
+    text-align: center;
+    padding: 5px;
+    line-height: 2px;
+}
+
+.menu-container h5 a {
+    color: var(--pink);
+    text-decoration: underline;
 }
 
 .menu-title {
