@@ -27,6 +27,11 @@
 
 /* || @ 768px */
 @media screen and (max-width: 768px) {
+    /* || Parallax */
+    .parallax, .parallax-2 {
+        background-attachment: inherit;
+    }
+
     /* || Navbar */
     .navbar-brand {
         font-size: 20px;
