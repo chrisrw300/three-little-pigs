@@ -50,6 +50,10 @@
         width: 100%;
     }
 
+    .navbar {
+        padding: 5px;
+    }
+
     /* || Our Story Home Styles*/
     .column {
         height: 350px;
