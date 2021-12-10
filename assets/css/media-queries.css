@@ -30,6 +30,7 @@
     /* || Parallax */
     .parallax, .parallax-2 {
         background-attachment: inherit;
+        background-size: contain;
     }
 
     /* || Navbar */
