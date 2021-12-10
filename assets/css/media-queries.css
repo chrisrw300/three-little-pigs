@@ -1,3 +1,10 @@
+/* || Root */
+:root {
+    --pink: #ed7f8d;
+    --white: white;
+    --black: #0C131D;
+}   
+
 /* || @ 1024px*/
 @media screen and (max-width: 1024px) {
     /* || Body Styles */
@@ -31,14 +38,11 @@
         text-align: left;
     }
 
-    .navbar-collapse a {
-    }
-
     .nav-item {
-        border: thin solid white;
+        text-align: center;
         padding: 5px 15px;
         border-radius: 10px;
-        width: 50%;
+        width: 100%;
     }
 
     /* || Our Story Home Styles*/
@@ -47,15 +51,40 @@
         width: 90%;
         margin: 10px auto;
         padding: 10px;
-        background:  var(--white);
         text-align: center;
     }
 
-    .our-story-img {
-        background-image: url('../img/3-pig-project.jpg');
-        background-size: cover;
-        background-position: bottom;
-        background-repeat: no-repeat;
-        border-radius: 10px;
+    .section-subtitle {
+        margin: 10px 0 0 75px;
+        text-align: left !important;
+    }
+
+    .iframe-p {
+        text-align: right;
+        margin-right: 70px;
+    }
+
+    iframe {
+        width: 75%;
+        padding: 0;
+    }
+
+    form {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    label {
+        text-align: left;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    /* || About Us */
+    .about-belief i {
+        font-size: 8em;
+        margin: 5px 0;
     }
 }

@@ -85,6 +85,14 @@ main {
     color: var(--pink);
 }
 
+.hamburger {
+    width: 35px;
+    height: 3px;
+    background-color: var(--pink);
+    margin: 6px 0;
+    border-radius: 1px;
+}
+
 /* || Hero Section */
 .hero-section {
     display: flex;
@@ -120,6 +128,7 @@ main {
 .hero-item p {
     font-family: var(--pt-serif);
     color: var(--white);
+    font-size: 16px;
 }
 
 .hero-item a {transition: 0.3s;}
@@ -177,6 +186,15 @@ main {
     min-height: 300px;
     background-image: url("../img/parallax.jpg");
     background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 {
+    min-height: 300px;
+    background-image: url("../img/parallax-2.jpg");
+    background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
