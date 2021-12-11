@@ -1,23 +1,115 @@
-/* || Media Query @ 1024px*/
-
+/* || Root */
+:root {
+    --pink: #ed7f8d;
+    --white: white;
+    --black: #0C131D;
+}   
+/* || @ 1024px*/
 @media screen and (max-width: 1024px) {
-/* || Hero Section */
-.hero-section {
-    height: 400px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* || Body */
+    body {max-width: 85%;}
+    /* || Homepage - Hero Section */
+    .hero-section {
+        height: 400px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-item {width: 75%;}
+    .hero-title {font-size: 25px;}
+    .hero-item p {font-size: 15px;}
 }
-
-.hero-btn {
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    height: 35px;
-    width: 50%;
-    background: pink;
-    cursor: pointer;
+/* || @ 768px */
+@media screen and (max-width: 768px) {
+    /* || Parallax */
+    .parallax, .parallax-2 {
+        background-attachment: inherit;
+        background-size: contain;
+    }
+    /* || Navbar */
+    .navbar-brand {font-size: 20px;}
+    .navbar-collapse {
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+    }
+    .nav-item {
+        text-align: center;
+        padding: 5px 15px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    .navbar {padding: 5px;}
+    /* || Homepage - Our Story */
+    .column {
+        height: 350px;
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+    }
+    /* || Homepage - Contact Us */
+    .section-subtitle {
+        margin: 10px 0 0 75px;
+        text-align: left !important;
+    }
+    .iframe-p {
+        text-align: right;
+        margin-right: 70px;
+    }
+    iframe {
+        width: 75%;
+        padding: 0;
+    }
+    form {
+        width: 75%;
+        margin: 0 auto;
+    }
+    label {text-align: left;}
+    textarea {height: 100px;}
+    /* || About Us Page */
+    .about-belief i {
+        font-size: 8em;
+        margin: 5px 0;
+    }
 }
-
-
+/* || @ 425px */
+@media screen and (max-width: 425px) {
+    /* || Body & Main */
+    body {max-width: 100%;}
+    main {  padding: 0;}
+    /* || Homepage - Hero Section */
+    .hero-item {
+        width: 90%;
+        margin: 30px auto;
+    }
+    /* || Homepage - Contact Us */
+    iframe {width: 90%;}
+    form {width: 90%;}
+    .iframe-p {
+        text-align: right;
+        margin-right: 20px;
+    }
+    .section-subtitle {
+        margin: 10px 0 0 20px;
+        text-align: left !important;
+    }
+    /* || Product Page */
+    .menu-container {
+        padding: 10px;
+        border-radius: 5px;
+        border: 10px double var(--pink);
+    }
+    .menu-title {font-size: 20px;}
+    .menu-item {
+        width: 100%;
+        border-bottom: 2px dotted var(--black);
+    }
+    .item-name, .item-price {font-size: 15px;}
+    /* || About Us Page */
+    .about-info p, .about-values-p {width: 90%;}
+    .about-belief i {
+        font-size: 6em;
+        margin: 5px 0;
+    }
 }
